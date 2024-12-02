@@ -92,6 +92,10 @@ Alternatively:
 curl localhost:80
 ```
 Instead of 80 use the same number you defined above with -P NNN:80
+you will see something like this: 
+```bash
+I've changed the content of this file in the docker volume
+```
 
 Let’s restart the container:
 ```bash
