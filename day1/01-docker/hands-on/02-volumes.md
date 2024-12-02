@@ -87,6 +87,12 @@ You will be able to see these changes connecting to the port 80 of your host:
 
 ![](images/nginx_modified.png)
 
+Alternatively:
+```bash
+curl localhost:80
+```
+Instead of 80 use the same number you defined above with -P NNN:80
+
 Let’s restart the container:
 ```bash
 docker container restart nginx2
