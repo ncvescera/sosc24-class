@@ -2,7 +2,7 @@ Let's create our first docker container:
 
 ### "Command"
   ```bash
-  docker container run hello-world
+  docker container run --name firsttest-$USER hello-world
   ```
 Look at the output:
 
