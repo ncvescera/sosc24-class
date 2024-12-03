@@ -10,7 +10,7 @@
 
 ## Day 2
 
-- [Interacting with cloud storage](./day2/01-working-with-S3_howto.ipynb)
+- [Interacting with cloud storage](./day2/Working-with-S3_howto-sosc2024.ipynb)
 - [Messaging](./day2/2-RequestsAndMessages.ipynb)
 - [Dask](./day2/Dask)
 
