@@ -1,0 +1,19 @@
+name: My Pipeline
+
+python_env: python_env.yaml
+
+entry_points:
+  train:
+    parameters:
+        learning_rate: {type: float, default: 0.0001}
+        batch_size: {type: int, default: 10}
+        n_epochs: {type: int, default: 30}
+    command: "papermill notebooks/training.ipynb output/train-out.ipynb -p learning_rate {learning_rate} -p batch_size {batch_size} -p n_epochs {n_epochs}"
+  eval:
+    parameters:
+        model: {type: string, default: "classifier.keras"}
+    command: "papermill notebooks/evaluation.ipynb output/eval-out.ipynb -p model {model}"
+  main:  
+    parameters:
+      data_url: {type: str, default: "https://raw.githubusercontent.com/mlflow/mlflow/master/tests/datasets/winequality-red.csv"}
+    command: "python main.py"
